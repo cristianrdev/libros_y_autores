@@ -83,11 +83,3 @@ def authors_detail(request, num):
         print(request.POST['libro'])
         print("ahora es POST-----------------------------")
         return redirect('/authors/'+ str(num))
-
-
-# def asociar_libro_a_autores(request, num):
-#     this_book = Book.objects.get(id=request.POST['autores'])
-#     numero = int(num)
-#     print("*"*30)
-#     print(request.POST['autores'])
-#     return redirect('books/<numero>')
